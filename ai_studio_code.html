@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityCab | Fast & Reliable Local Taxi Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1556122071-e404be745493?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-yellow-400 p-4 sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-black italic">CITY<span class="text-white">CAB</span></h1>
+            <div class="hidden md:flex space-x-6 font-semibold">
+                <a href="#home" class="hover:text-white">Home</a>
+                <a href="#services" class="hover:text-white">Services</a>
+                <a href="#fleet" class="hover:text-white">Our Fleet</a>
+                <a href="#contact" class="hover:text-white">Contact</a>
+            </div>
+            <a href="tel:+1234567890" class="bg-black text-white px-4 py-2 rounded-full font-bold animate-pulse">
+                <i class="fas fa-phone"></i> Call Now
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient h-screen flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-3xl">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-4">Need a Ride? We're Already There.</h2>
+            <p class="text-xl mb-8">Professional, safe, and affordable local taxi services available 24/7.</p>
+            
+            <!-- Quick Booking Form -->
+            <div class="bg-white p-6 rounded-lg shadow-xl text-black text-left">
+                <form class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                        <label class="block text-sm font-bold mb-1">Pickup Location</label>
+                        <input type="text" placeholder="Enter Address" class="w-full border p-2 rounded">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-1">Drop Location</label>
+                        <input type="text" placeholder="Enter Destination" class="w-full border p-2 rounded">
+                    </div>
+                    <div class="flex items-end">
+                        <button type="button" onclick="alert('Booking request sent!')" class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 rounded transition">
+                            Book My Ride
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-12">Our Services</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded shadow text-center border-b-4 border-yellow-400">
+                <i class="fas fa-plane-departure text-4xl text-yellow-500 mb-4"></i>
+                <h4 class="text-xl font-bold mb-2">Airport Transfers</h4>
+                <p class="text-gray-600">Fixed rates for all major airports. We track your flight for delays.</p>
+            </div>
+            <div class="bg-white p-8 rounded shadow text-center border-b-4 border-yellow-400">
+                <i class="fas fa-clock text-4xl text-yellow-500 mb-4"></i>
+                <h4 class="text-xl font-bold mb-2">Local City Travel</h4>
+                <p class="text-gray-600">Fast pickup within 10 minutes anywhere in the local city area.</p>
+            </div>
+            <div class="bg-white p-8 rounded shadow text-center border-b-4 border-yellow-400">
+                <i class="fas fa-briefcase text-4xl text-yellow-500 mb-4"></i>
+                <h4 class="text-xl font-bold mb-2">Corporate Accounts</h4>
+                <p class="text-gray-600">Reliable transport for your employees and business guests.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-8">Why Ride With Us?</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div>
+                    <span class="text-yellow-400 text-3xl font-bold">24/7</span>
+                    <p>Availability</p>
+                </div>
+                <div>
+                    <span class="text-yellow-400 text-3xl font-bold">100%</span>
+                    <p>Safe Drivers</p>
+                </div>
+                <div>
+                    <span class="text-yellow-400 text-3xl font-bold">Low</span>
+                    <p>Flat Rates</p>
+                </div>
+                <div>
+                    <span class="text-yellow-400 text-3xl font-bold">50+</span>
+                    <p>Clean Cars</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-white py-12 border-t">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="font-bold text-xl mb-4 italic text-yellow-600">CITYCAB</h4>
+                <p class="text-gray-600">The most trusted local taxi service in the region. Your safety is our priority.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                <ul class="text-gray-600 space-y-2">
+                    <li><a href="#" class="hover:text-yellow-600">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-yellow-600">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-yellow-600">Become a Driver</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">Contact Us</h4>
+                <p class="text-gray-600"><i class="fas fa-map-marker-alt mr-2"></i> 123 Main St, Your City</p>
+                <p class="text-gray-600"><i class="fas fa-phone mr-2"></i> +1 234 567 890</p>
+                <p class="text-gray-600"><i class="fas fa-envelope mr-2"></i> support@citycab.com</p>
+            </div>
+        </div>
+        <div class="text-center mt-8 text-gray-400 text-sm">
+            &copy; 2023 CityCab Services. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+</body>
+</html>
